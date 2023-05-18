@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QPICK магазин аудио-аксессуаров</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="wrapper page-header__wrapper">
+            <div class="page-header__logo-wrapper">
+                <a>
+                    <div class="page-header__logo logo">
+                        <svg width="85" height="23" aria-label="Логотип магазина">
+                            <use xlink:href="img/sprite/sprite.svg#logo"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <ul class="page-header__list">
+                <li class="page-header__item favorite">
+                    <a href="#" class="page-header__link">
+                        <svg width="23" height="20" aria-label="Любимые товары">
+                            <use xlink:href="img/sprite/sprite.svg#favorite"></use>
+                        </svg>
+                    </a>
+                    <div class="favorite__number page-header__number">2</div>
+                </li>
+                <li class="page-header__item product-basket">
+                    <a href="basket.html" class="page-header__link">
+                        <svg width="24" height="25" aria-label="Корзина">
+                            <use xlink:href="img/sprite/sprite.svg#product-basket"></use>
+                        </svg>
+                    </a>
+                    <div class="product-basket__number product-basket__number--hide page-header__number "></div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="visually-hidden">Магазин аудио-аксессуаров</h1>
+        <div class="wrapper">
+            <section class="assets">
+                <h2>Наушники</h2>
+                <div class="assets__list" id="headphones"></div>
+            </section>
+            <section class="assets">
+                <h2>Беспроводные наушники</h2>
+                <div class="assets__list" id="wireless"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="wrapper">
+            <div class="page-footer__wrapper">
+                <nav class="page-footer__nav">
+                    <div class="page-footer__logo-wrapper">
+                        <a>
+                            <div class="page-footer__logo logo">
+                                <svg width="85" height="23" aria-label="Логотип магазина">
+                                    <use xlink:href="img/sprite/sprite.svg#logo"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <ul class="page-footer__list list">
+                        <li class="page-footer__item list__item"><a href="#">Избранное</a></li>
+                        <li class="page-footer__item list__item"><a href="basket.html">Корзина</a></li>
+                        <li class="page-footer__item list__item"><a href="#">Контакты</a></li>
+                        <li class="page-footer__item list__item"><a href="#">Условия сервиса</a></li>
+                        <li class="page-footer__item list__item list__toggle">
+                            <div class="list__inner-wrapper">
+                                <div>
+                                    <svg width="20" height="20" aria-label="Корзина">
+                                        <use xlink:href="img/sprite/sprite.svg#lang"></use>
+                                    </svg>
+                                </div>
+                                <button type="button" class="list__button list__button--hide">Каз</button>
+                                <button type="button" class="list__button list__button--active">Рус</button>
+                                <button type="button" class="list__button">Eng</button>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="footer-social">
+                    <h2 class="visually-hidden">Давайте дружить!</h2>
+                    <ul class="footer-social__list">
+                        <li class="footer-social__item">
+                            <a href="https://vk.com/">
+                                <span class="visually-hidden">Вконтакте</span>
+                                <svg width="31" height="21">
+                                    <use xlink:href="img/sprite/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a href="https://telegram.org/">
+                                <span class="visually-hidden">Телеграм</span>
+                                <svg width="31" height="31">
+                                    <use xlink:href="img/sprite/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a href="https://www.whatsapp.com/">
+                                <span class="visually-hidden">Воцап</span>
+                                <svg width="31" height="31">
+                                    <use xlink:href="img/sprite/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+    </footer>
+
+    <template id="card">
+        <div class="assets__item">
+            <div class="assets__image-wrapper">
+                <img class="assets__image" src="" alt="Фото наушников" width="220" height="237">
+            </div>
+            <div class="assets__description">
+                <p class="assets__title assets__unit"></p>
+                <p class="assets__price assets__unit"><del class="assets__sale"><span
+                            class="assets__sale-number"></span> &#8381;</del><span class="assets__price-number"></span>
+                    &#8381;</p>
+                <p class="assets__rating assets__unit">
+                    <span>
+                        <svg class="assets__rating-img" width="25" height="23" aria-label="Звезда">
+                            <use xlink:href="img/sprite/sprite.svg#star"></use>
+                        </svg>
+                    </span>
+                    <span class="assets__rating-number"></span>
+                </p>
+                <a href="#" class="assets__link assets__unit">Купить</a>
+            </div>
+        </div>
+    </template>
+
+    <script src="js/script.js" type="module"></script>
+</body>
+
+</html>
